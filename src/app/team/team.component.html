@@ -1,0 +1,46 @@
+<!-- <div class="team-container">
+  <div class="member-container">
+    <h1 class="team-page-title">Leadership</h1>
+    <div *ngFor="let member of team_members" class="team-member">
+      <h1>{{member.name}}</h1>
+      <p><b>{{member.position}}</b></p><br>
+      <p>{{member.summary}}</p><br>
+      <p>{{member.summary_part2}}</p>
+    </div>
+  </div>
+
+</div> -->
+
+
+<!-- <div *ngFor="let transaction of selected_transactions" class="selected-transactions">
+  <img src={{transaction.property_image}} alt="">
+  <p><b>{{transaction.address}}</b></p>
+  <p>{{transaction.date}}</p>
+  <p>{{transaction.summary}}</p>
+</div> -->
+
+
+
+
+<div class="selected-transactions-container">
+  <table>
+    <tr *ngFor="let member of team_members">
+      <td><img src="{{member.photo}}" alt=""></td>
+      <td><p class="margin"><b>{{member.name}}</b></p><p class="margin-tall">{{member.position}}</p><p>{{member.summary}}</p><br><p>{{member.summary_part2}}</p></td>
+    </tr>
+      <app-footer-logo></app-footer-logo>
+  </table>
+</div>
+
+
+<div class="mobile-selected-transaction-container">
+  <div *ngFor="let member of team_members" class="selected-transactions">
+    <img src={{member.photo}} alt="">
+    <p><b>{{member.name}}</b></p>
+    <p class="margin-tall-mobile">{{member.position}}</p>
+    <p class="margin-tall-mobile">{{member.summary}}</p>
+    <p class="margin-tall-mobile">{{member.summary_part2}}</p>
+  </div>
+  <app-footer-logo></app-footer-logo>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="selected-transactions-container">
+  <table>
+    <tr *ngFor="let transaction of selected_transactions">
+      <td><img src={{transaction.property_image}} alt=""></td>
+      <td><p class="margin"><b>{{transaction.address}}</b></p><p class="margin-tall">{{transaction.date}}</p><p>{{transaction.summary}}</p></td>
+    </tr>
+      <app-footer-logo></app-footer-logo>
+  </table>
+</div>
+
+
+<div class="mobile-selected-transaction-container">
+  <div *ngFor="let transaction of selected_transactions" class="selected-transactions">
+    <img src={{transaction.property_image}} alt="">
+    <p><b>{{transaction.address}}</b></p>
+    <p class="margin-tall-mobile">{{transaction.date}}</p>
+    <p class="margin-tall-mobile">{{transaction.summary}}</p>
+  </div>
+  <app-footer-logo></app-footer-logo>
+
+</div>

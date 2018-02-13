@@ -1,0 +1,54 @@
+@import '../sass/mixins';
+@import '../sass/variables';
+
+
+.philosophy_container{
+  width: 100vw;
+  height: calc(100vh - 160px);
+  @include fadeInAnimation();
+  @include respond-to(phone){
+    width: 100vw;
+    // height: 100vh;
+  }
+  .philosophy_text{
+    margin-top: $top-spacing;
+    width: 50%;
+    position: relative;
+    left: $left-spacing;
+    top: $content-top-spacing;
+    @include respond-to(phone){
+      margin-top: 0;
+      width: 90%;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include respond-to(tablet-portrait){
+      margin-top: 0;
+      width: 90%;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include respond-to(tablet-landscape){
+      margin-top: 0;
+      width: 90%;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    p{
+      line-height: 1.5;
+    }
+  }
+  .philosophy-image{
+    img{
+      width: 85%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@include fadein();

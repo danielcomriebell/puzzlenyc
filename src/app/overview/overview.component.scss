@@ -1,0 +1,211 @@
+@import '../sass/mixins';
+@import '../sass/variables';
+
+.home-video{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  @include respond-to(phone){
+    // height: calc(100vh - 150px);
+    display: none;
+  }
+  // @include respond-to(tablet-portrait){
+  //   // height: calc(100vh - 150px);
+  //   display: none;
+  // }
+  // @include respond-to(tablet-landscape){
+  //   // height: calc(100vh - 150px);
+  //   display: none;
+  // }
+}
+
+.overview{
+  height: 100vh;
+  z-index: 1;
+  @include fadeInAnimation();
+  iframe{
+    position: fixed;
+    width: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50vh;
+    display: none;
+    // @include respond-to(phone){
+    //   // height: calc(100vh - 150px);
+    //   display: block;
+    // }
+    // @include respond-to(tablet-portrait){
+    //   // height: calc(100vh - 150px);
+    //   display: block;
+    // }
+    // @include respond-to(tablet-landscape){
+    //   // height: calc(100vh - 150px);
+    //   display: block;
+    // }
+  }
+
+  // img{
+  //   display: none;
+  //   @include respond-to(phone){
+  //     display: block;
+  //     position: fixed;
+  //     height: 100vh;
+  //   }
+  // }
+
+  p{
+    line-height: 1.5;
+  }
+}
+
+.scroll-down{
+  bottom: 0px;
+  left: 0px;
+  transform: none;
+  background-color: white;
+  width: 100vw;
+  text-align: center;
+  height: 50px;
+  position: fixed;
+  p{
+    line-height: 50px;
+  }
+  // line-height: 50px;
+  // @include respond-to(laptop-small){
+  //   bottom: 0px;
+  //   left: 0px;
+  //   transform: none;
+  //   background-color: white;
+  //   width: 100vw;
+  //   text-align: center;
+  //   height: 50px;
+  // }
+  // @include respond-to(laptop-medium){
+  //   bottom: 0px;
+  //   left: 0px;
+  //   transform: none;
+  //   background-color: white;
+  //   width: 100vw;
+  //   text-align: center;
+  //   height: 50px;
+  // }
+  // @include respond-to(laptop-large){
+  //   bottom: 0px;
+  //   left: 0px;
+  //   transform: none;
+  //   background-color: white;
+  //   width: 100vw;
+  //   text-align: center;
+  //   height: 50px;
+  // }
+  // @include respond-to(laptop-desktop){
+  //   bottom: 0px;
+  //   left: 0px;
+  //   transform: none;
+  //   background-color: white;
+  //   width: 100vw;
+  //   text-align: center;
+  //   height: 50px;
+  // }
+  // p{
+  //   @include respond-to(laptop-small){
+  //     line-height: 50px;
+  //   }
+  //   @include respond-to(laptop-medium){
+  //     line-height: 50px;
+  //   }
+  //   @include respond-to(laptop-large){
+  //     line-height: 50px;
+  //   }
+  //   @include respond-to(laptop-desktop){
+  //     line-height: 50px;
+  //   }
+  // }
+}
+
+.mobile-background{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  @include respond-to(phone){
+    display: block;
+  }
+}
+
+
+.something-else{
+  z-index: 2;
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: calc(100vh - 150px);
+  background-color: white;
+  @include respond-to(phone){
+    height: calc(100vh - 49px);
+  }
+  @include respond-to(tablet-portrait){
+    height: calc(100vh - 49px);
+  }
+  @include respond-to(tablet-landscape){
+    height: calc(100vh - 49px);
+  }
+}
+
+.content{
+  position: relative;
+  width: 50%;
+  top: 25px;
+  left: $left-spacing;
+  @include respond-to(phone){
+    margin-top: 0;
+    width: 90%;
+    // top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include respond-to(tablet-portrait){
+    margin-top: 0;
+    width: 90%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include respond-to(tablet-landscape){
+    margin-top: 0;
+    width: 90%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.overlay-photo{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -24%);
+  opacity: .5;
+  @include respond-to(phone){
+    transform: translate(-50%, -50%);
+  }
+  @include respond-to(tablet-portrait){
+    transform: translate(-50%, -50%);
+  }
+  @include respond-to(tablet-landscape){
+    transform: translate(-50%, -50%);
+  }
+  img{
+    display: block;
+    width: 200px;
+  }
+}
+
+
+
+@include fadein()

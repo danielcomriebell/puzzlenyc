@@ -1,0 +1,12 @@
+.footer-logo-container{
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  .footer-logo{
+    width: 150px;
+    img{
+      width: 100%;
+    }
+  }
+}

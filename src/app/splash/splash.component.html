@@ -1,0 +1,11 @@
+<div [ngClass]="{'remove-splash': splashActive}" (click)="movetheText()" class="container">
+  <div class="splash-image">
+    <img src="../assets/puzzle-piece.png" alt="">
+    <div class="splash-text">
+      <img [ngClass]="{'move-text': moveText}" src="../assets/splash.png" alt="">
+    </div>
+    <div class="click-text">
+      <p>click</p>
+    </div>
+  </div>
+</div>

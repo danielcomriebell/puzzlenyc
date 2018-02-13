@@ -1,0 +1,26 @@
+@import '../sass/mixins';
+@import '../sass/variables';
+
+.mobile-logo-container{
+  position: fixed;
+  display: none;
+  width: 40px;
+  right: 10px;
+  top: 5px;
+  z-index: 27;
+  .mobile-logo{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  @include respond-to(phone){
+    display: block;
+  }
+  @include respond-to(tablet-portrait){
+    display: block;
+  }
+  @include respond-to(tablet-landscape){
+    display: block;
+  }
+}

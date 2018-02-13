@@ -1,0 +1,98 @@
+@import '../sass/mixins';
+@import '../sass/variables';
+
+.selected-transaction-container{
+  width: 100vw;
+  height: calc(100vh - 160px);
+  margin-top: 160px;
+}
+
+
+table{
+  margin-top: 160px;
+  width: 75%;
+  left: $left-spacing;
+  top: 35px;
+  position: relative;
+  border-collapse: collapse;
+  @include respond-to(phone){
+    display: none;
+  }
+  @include respond-to(tablet-portrait){
+    display: none;
+  }
+  @include respond-to(tablet-landscape){
+    display: none;
+  }
+  @include fadeInAnimation();
+
+  img{
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    @include respond-to(phone){
+      width: 100px;
+    }
+    @include respond-to(tablet-portrait){
+      width: 100px;
+    }
+    @include respond-to(tablet-landscape){
+      width: 100px;
+    }
+  }
+
+  td{
+    vertical-align: top;
+    padding-bottom: 60px;
+    padding-right: 40px;
+    p{
+      line-height: 1.5;
+    }
+  }
+
+}
+
+.margin{
+  margin-bottom: 5px;
+}
+
+.margin-tall{
+  margin-bottom: 20px;
+}
+
+.margin-tall-mobile{
+  margin-bottom: 20px;
+}
+
+.mobile-selected-transaction-container{
+  display: none;
+  position: relative;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  padding-bottom: 150px;
+  @include respond-to(phone){
+    display: block;
+  }
+  @include respond-to(tablet-portrait){
+    width: 65%;
+    display: block;
+  }
+  @include respond-to(tablet-landscape){
+    width: 65%;
+    display: block;
+  }
+  .selected-transactions{
+    img{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    p{
+      line-height: 1.5;
+    }
+  }
+}
+
+@include fadein();

@@ -1,0 +1,142 @@
+@import '../sass/mixins';
+@import '../sass/variables';
+
+.menu{
+  position: fixed;
+  padding-top: 30px;
+  text-align: left;
+  background-color: white;
+  width: 100vw;
+  z-index: 2;
+  top: 0;
+  @include respond-to(phone){
+    display: none;
+  }
+  @include respond-to(tablet-portrait){
+    display: none;
+  }
+  @include respond-to(tablet-landscape){
+    display: none;
+  }
+  .menu-container{
+    background-color: white;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-family: 'courier new';
+    font-size: $p-font-size;
+  }
+  p{
+    text-align: center;
+  }
+  ul, li{
+    display: inline-block;
+  }
+  ul{
+    margin-left: $left-spacing;
+  }
+  li{
+    margin-right: 50px;
+    padding-bottom: 20px;
+  }
+  img{
+    margin-bottom: 15px;
+    visibility: hidden;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+    width: 60px;
+  }
+}
+
+
+
+.class1{
+   background-color: #FFF000;
+}
+
+.class2{
+  img{
+    visibility: visible;
+  }
+}
+
+.mobile-menu{
+  display: none;
+  position: fixed;
+  // left: 25px;
+  // top: 25px;
+  height: 50px;
+  z-index:26;
+  width: 100vw;
+  background-color: white;
+  // cursor: pointer;
+  @include respond-to(phone){
+    display: block;
+  }
+  @include respond-to(tablet-portrait){
+    display: block;
+  }
+  @include respond-to(tablet-landscape){
+    display: block;
+  }
+  .burger{
+    width: 40px;
+    left: 15px;
+    position: relative;
+    top: 15px;
+    // z-index: 20;
+  }
+}
+
+.mobile-menu-container{
+  display: none;
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  background-color: white;
+  z-index: 25;
+  transform: translateY(100vh);
+  transition: all .4s ease-in;
+  @include respond-to(phone){
+    display: block;
+  }
+  @include respond-to(tablet-portrait){
+    display: block;
+  }
+  @include respond-to(tablet-landscape){
+    display: block;
+  }
+
+  ul{
+    width: 250px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    li{
+      margin-bottom: 15px;
+    }
+    p{
+      a{
+        text-decoration: none;
+        color: black;
+        font-family: 'courier new';
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.init-menu{
+  transform: translateY(0);
+}
+
+.top,.middle,.bottom {
+  transition: all 0.35s linear;
+}
+
+.top.open { transform: translateY(60px) }
+.bottom.open { transform: translateY(-60px) }

@@ -1,0 +1,55 @@
+@import '../sass/mixins';
+@import '../sass/variables';
+
+
+
+.contact-container{
+  width: 100vw;
+  height: calc(100vh - 160px);
+  @include fadeInAnimation();
+  .info-container{
+    position: relative;
+    margin-top: $top-spacing;
+    width: 50%;
+    position: relative;
+    left: $left-spacing;
+    top: $content-top-spacing;
+    @include respond-to(phone){
+      margin-top: 0;
+      width: 90%;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include respond-to(tablet-portrait){
+      margin-top: 0;
+      width: 90%;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include respond-to(tablet-landscape){
+      margin-top: 0;
+      width: 90%;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .contact-info{
+      line-height: 2;
+    }
+    .company-info{
+      margin-bottom: 25px;
+      line-height: 2;
+      h1{
+        margin-bottom: 15px;
+        font-size: 13px;
+      }
+      p{
+        line-height: 1.75;
+      }
+    }
+  }
+}
+
+@include fadein();
