@@ -21,7 +21,7 @@ export class TeamComponent implements OnInit {
       'name':'William Savitt',
       'position':'Principal',
       'photo':'../assets/william_savitt.jpg',
-      'summary':"William Savitt is a partner with of Wachtell, Lipton, Rosen & Katz, a leading New York law firm.   While removed from day-to-day operations, William plays an advisory role, leveraging his experience in creative deal-making to offer novel solutions to real estate sellers.",
+      'summary':"William Savitt is a partner of Wachtell, Lipton, Rosen & Katz, a leading New York law firm.  While removed from day-to-day operations, William plays an advisory role, leveraging his experience in creative deal-making to offer novel solutions to real estate sellers.",
       'summary_part2':""
     }
   ]

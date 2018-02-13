@@ -11,17 +11,8 @@
   height: auto;
   transform: translateX(-50%) translateY(-50%);
   @include respond-to(phone){
-    // height: calc(100vh - 150px);
     display: none;
   }
-  // @include respond-to(tablet-portrait){
-  //   // height: calc(100vh - 150px);
-  //   display: none;
-  // }
-  // @include respond-to(tablet-landscape){
-  //   // height: calc(100vh - 150px);
-  //   display: none;
-  // }
 }
 
 .overview{
@@ -35,29 +26,7 @@
     transform: translateY(-50%);
     height: 50vh;
     display: none;
-    // @include respond-to(phone){
-    //   // height: calc(100vh - 150px);
-    //   display: block;
-    // }
-    // @include respond-to(tablet-portrait){
-    //   // height: calc(100vh - 150px);
-    //   display: block;
-    // }
-    // @include respond-to(tablet-landscape){
-    //   // height: calc(100vh - 150px);
-    //   display: block;
-    // }
   }
-
-  // img{
-  //   display: none;
-  //   @include respond-to(phone){
-  //     display: block;
-  //     position: fixed;
-  //     height: 100vh;
-  //   }
-  // }
-
   p{
     line-height: 1.5;
   }
@@ -75,57 +44,6 @@
   p{
     line-height: 50px;
   }
-  // line-height: 50px;
-  // @include respond-to(laptop-small){
-  //   bottom: 0px;
-  //   left: 0px;
-  //   transform: none;
-  //   background-color: white;
-  //   width: 100vw;
-  //   text-align: center;
-  //   height: 50px;
-  // }
-  // @include respond-to(laptop-medium){
-  //   bottom: 0px;
-  //   left: 0px;
-  //   transform: none;
-  //   background-color: white;
-  //   width: 100vw;
-  //   text-align: center;
-  //   height: 50px;
-  // }
-  // @include respond-to(laptop-large){
-  //   bottom: 0px;
-  //   left: 0px;
-  //   transform: none;
-  //   background-color: white;
-  //   width: 100vw;
-  //   text-align: center;
-  //   height: 50px;
-  // }
-  // @include respond-to(laptop-desktop){
-  //   bottom: 0px;
-  //   left: 0px;
-  //   transform: none;
-  //   background-color: white;
-  //   width: 100vw;
-  //   text-align: center;
-  //   height: 50px;
-  // }
-  // p{
-  //   @include respond-to(laptop-small){
-  //     line-height: 50px;
-  //   }
-  //   @include respond-to(laptop-medium){
-  //     line-height: 50px;
-  //   }
-  //   @include respond-to(laptop-large){
-  //     line-height: 50px;
-  //   }
-  //   @include respond-to(laptop-desktop){
-  //     line-height: 50px;
-  //   }
-  // }
 }
 
 .mobile-background{
@@ -162,10 +80,10 @@
   width: 50%;
   top: 25px;
   left: $left-spacing;
+  min-height: calc(100% - 125px);
   @include respond-to(phone){
     margin-top: 0;
     width: 90%;
-    // top: 100px;
     left: 50%;
     transform: translateX(-50%);
   }

@@ -14,12 +14,14 @@
     position: relative;
     left: $left-spacing;
     top: $content-top-spacing;
+    min-height: 100%;
     @include respond-to(phone){
       margin-top: 0;
       width: 90%;
       top: 100px;
       left: 50%;
       transform: translateX(-50%);
+      margin-bottom: 50px;
     }
     @include respond-to(tablet-portrait){
       margin-top: 0;
@@ -27,6 +29,7 @@
       top: 100px;
       left: 50%;
       transform: translateX(-50%);
+      margin-bottom: 50px;
     }
     @include respond-to(tablet-landscape){
       margin-top: 0;
@@ -34,6 +37,7 @@
       top: 100px;
       left: 50%;
       transform: translateX(-50%);
+      margin-bottom: 50px;
     }
     .contact-info{
       line-height: 2;
@@ -47,6 +51,17 @@
       }
       p{
         line-height: 1.75;
+      }
+    }
+    .map-image{
+      width: 100%;
+      img{
+        width: 85%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        @include respond-to(phone){
+          width: 100%;
+        }
       }
     }
   }
