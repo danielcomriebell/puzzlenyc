@@ -12,7 +12,7 @@ export class SelectedTransactionsComponent implements OnInit {
       'property_image':'../assets/apt3.jpg',
       'address':'846 Flushing Ave',
       'date':'December 2017',
-      'summary':'Jacob transacted 846 Flushing Avenue, an RGA Development Site featuring 17,000 buildable square-feet in Bushiwck. The property owner entered into a 99-year land-lease with an option-to-buy after 5 years, enabling the property owner to achieve the highest possible selling price while in the interim receiving income comparable to the income he were to receive had he reinvested his sales proceeds in a 1031.'
+      'summary':'Jacob transacted 846 Flushing Avenue, an R6A Development Site featuring 17,000 buildable square-feet in Bushiwck. The property owner entered into a 99-year land-lease with an option-to-buy after 5 years, enabling the property owner to achieve the highest possible selling price while in the interim receiving income comparable to the income he were to receive had he reinvested his sales proceeds in a 1031.'
     },
     {
       'property_image':'../assets/apt2.jpg',
